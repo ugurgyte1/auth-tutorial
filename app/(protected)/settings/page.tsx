@@ -87,13 +87,13 @@ const SettingsPage = () => {
     },[])
 
   return (
-    <Card className="w-[600px]">
-        <CardHeader>
+    <Card className="w-full rounded-none md:rounded-lg">
+        <CardHeader className="w-full">
             <p className="text-2xl font-semibold text-center">
                 ⚙️ Settings Page
             </p>
         </CardHeader>
-        <CardContent>
+        <CardContent className="w-full">
             <form onSubmit={form.handleSubmit(onSubmit)}>
                 <FieldGroup>
                     <Controller
